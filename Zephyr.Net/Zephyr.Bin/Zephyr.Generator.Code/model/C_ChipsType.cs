@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class C_ChipsTypeService : ServiceBase<C_ChipsType>
-    {
-       
-    }
-
-    public class C_ChipsType : ModelBase
+  
+    public class C_ChipsType : IAggregateRoot
     {
 
         [Identity]

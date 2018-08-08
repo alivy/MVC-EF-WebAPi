@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_SysLogService : ServiceBase<Q_SysLog>
-    {
-       
-    }
-
-    public class Q_SysLog : ModelBase
+  
+    public class Q_SysLog : IAggregateRoot
     {
 
         [Identity]

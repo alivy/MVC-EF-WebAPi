@@ -72,7 +72,7 @@
             // btnConnect
             // 
             this.btnConnect.Location = new System.Drawing.Point(255, 39);
-            this.btnConnect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConnect.Margin = new System.Windows.Forms.Padding(4);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(100, 29);
             this.btnConnect.TabIndex = 0;
@@ -83,7 +83,7 @@
             // TableTreeView
             // 
             this.TableTreeView.Location = new System.Drawing.Point(1, 39);
-            this.TableTreeView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TableTreeView.Margin = new System.Windows.Forms.Padding(4);
             this.TableTreeView.Name = "TableTreeView";
             this.TableTreeView.Size = new System.Drawing.Size(241, 593);
             this.TableTreeView.TabIndex = 1;
@@ -91,7 +91,7 @@
             // btnCode
             // 
             this.btnCode.Location = new System.Drawing.Point(372, 39);
-            this.btnCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCode.Margin = new System.Windows.Forms.Padding(4);
             this.btnCode.Name = "btnCode";
             this.btnCode.Size = new System.Drawing.Size(100, 29);
             this.btnCode.TabIndex = 5;
@@ -102,7 +102,7 @@
             // ModelEdit
             // 
             this.ModelEdit.Location = new System.Drawing.Point(0, 0);
-            this.ModelEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ModelEdit.Margin = new System.Windows.Forms.Padding(4);
             this.ModelEdit.Name = "ModelEdit";
             this.ModelEdit.Size = new System.Drawing.Size(831, 566);
             this.ModelEdit.TabIndex = 6;
@@ -111,29 +111,29 @@
             // DalEdit
             // 
             this.DalEdit.Location = new System.Drawing.Point(0, 0);
-            this.DalEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DalEdit.Margin = new System.Windows.Forms.Padding(4);
             this.DalEdit.Name = "DalEdit";
             this.DalEdit.Size = new System.Drawing.Size(831, 562);
             this.DalEdit.TabIndex = 7;
-            this.DalEdit.Text = "DAL";
+            this.DalEdit.Text = "Repository";
             // 
             // BllEdit
             // 
             this.BllEdit.Location = new System.Drawing.Point(0, 4);
-            this.BllEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BllEdit.Margin = new System.Windows.Forms.Padding(4);
             this.BllEdit.Name = "BllEdit";
             this.BllEdit.Size = new System.Drawing.Size(825, 558);
             this.BllEdit.TabIndex = 8;
-            this.BllEdit.Text = "BLL";
+            this.BllEdit.Text = "IRepository";
             // 
             // WebListEdit
             // 
             this.WebListEdit.Location = new System.Drawing.Point(0, 0);
-            this.WebListEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WebListEdit.Margin = new System.Windows.Forms.Padding(4);
             this.WebListEdit.Name = "WebListEdit";
             this.WebListEdit.Size = new System.Drawing.Size(835, 520);
             this.WebListEdit.TabIndex = 9;
-            this.WebListEdit.Text = "//Todo aspx";
+            this.WebListEdit.Text = "Mapping";
             this.WebListEdit.WordWrap = false;
             // 
             // tabControl1
@@ -147,7 +147,7 @@
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Location = new System.Drawing.Point(252, 79);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(837, 554);
@@ -157,9 +157,9 @@
             // 
             this.tabPage1.Controls.Add(this.ModelEdit);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(829, 525);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Model";
@@ -169,41 +169,41 @@
             // 
             this.tabPage2.Controls.Add(this.DalEdit);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(829, 525);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "DAL";
+            this.tabPage2.Text = "Repository";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.BllEdit);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(829, 525);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "BLL";
+            this.tabPage3.Text = "IRepository";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.WebListEdit);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(829, 525);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "search.aspx";
+            this.tabPage4.Text = "Mapping";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.WebListJsEdit);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(829, 525);
             this.tabPage5.TabIndex = 4;
@@ -213,7 +213,7 @@
             // WebListJsEdit
             // 
             this.WebListJsEdit.Location = new System.Drawing.Point(0, 4);
-            this.WebListJsEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WebListJsEdit.Margin = new System.Windows.Forms.Padding(4);
             this.WebListJsEdit.Name = "WebListJsEdit";
             this.WebListJsEdit.Size = new System.Drawing.Size(825, 522);
             this.WebListJsEdit.TabIndex = 0;
@@ -224,7 +224,7 @@
             // 
             this.tabPage6.Controls.Add(this.txtEditAspx);
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Size = new System.Drawing.Size(829, 525);
             this.tabPage6.TabIndex = 5;
@@ -234,7 +234,7 @@
             // txtEditAspx
             // 
             this.txtEditAspx.Location = new System.Drawing.Point(-4, 0);
-            this.txtEditAspx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEditAspx.Margin = new System.Windows.Forms.Padding(4);
             this.txtEditAspx.Name = "txtEditAspx";
             this.txtEditAspx.Size = new System.Drawing.Size(835, 520);
             this.txtEditAspx.TabIndex = 10;
@@ -245,7 +245,7 @@
             // 
             this.tabPage7.Controls.Add(this.txtEditJs);
             this.tabPage7.Location = new System.Drawing.Point(4, 25);
-            this.tabPage7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Size = new System.Drawing.Size(829, 525);
             this.tabPage7.TabIndex = 6;
@@ -255,7 +255,7 @@
             // txtEditJs
             // 
             this.txtEditJs.Location = new System.Drawing.Point(-4, 0);
-            this.txtEditJs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEditJs.Margin = new System.Windows.Forms.Padding(4);
             this.txtEditJs.Name = "txtEditJs";
             this.txtEditJs.Size = new System.Drawing.Size(835, 520);
             this.txtEditJs.TabIndex = 10;
@@ -273,7 +273,7 @@
             this.tabPage8.Controls.Add(this.txtBillName);
             this.tabPage8.Controls.Add(this.txtModule);
             this.tabPage8.Location = new System.Drawing.Point(4, 25);
-            this.tabPage8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage8.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Size = new System.Drawing.Size(829, 525);
             this.tabPage8.TabIndex = 7;
@@ -323,7 +323,7 @@
             // txtFileName
             // 
             this.txtFileName.Location = new System.Drawing.Point(105, 101);
-            this.txtFileName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFileName.Margin = new System.Windows.Forms.Padding(4);
             this.txtFileName.Name = "txtFileName";
             this.txtFileName.Size = new System.Drawing.Size(287, 25);
             this.txtFileName.TabIndex = 0;
@@ -331,7 +331,7 @@
             // txtDetailTable
             // 
             this.txtDetailTable.Location = new System.Drawing.Point(105, 208);
-            this.txtDetailTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDetailTable.Margin = new System.Windows.Forms.Padding(4);
             this.txtDetailTable.Name = "txtDetailTable";
             this.txtDetailTable.Size = new System.Drawing.Size(287, 25);
             this.txtDetailTable.TabIndex = 0;
@@ -339,7 +339,7 @@
             // txtBillName
             // 
             this.txtBillName.Location = new System.Drawing.Point(105, 156);
-            this.txtBillName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBillName.Margin = new System.Windows.Forms.Padding(4);
             this.txtBillName.Name = "txtBillName";
             this.txtBillName.Size = new System.Drawing.Size(287, 25);
             this.txtBillName.TabIndex = 0;
@@ -347,7 +347,7 @@
             // txtModule
             // 
             this.txtModule.Location = new System.Drawing.Point(105, 54);
-            this.txtModule.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtModule.Margin = new System.Windows.Forms.Padding(4);
             this.txtModule.Name = "txtModule";
             this.txtModule.Size = new System.Drawing.Size(287, 25);
             this.txtModule.TabIndex = 0;
@@ -355,7 +355,7 @@
             // btnAll
             // 
             this.btnAll.Location = new System.Drawing.Point(492, 39);
-            this.btnAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAll.Margin = new System.Windows.Forms.Padding(4);
             this.btnAll.Name = "btnAll";
             this.btnAll.Size = new System.Drawing.Size(100, 29);
             this.btnAll.TabIndex = 12;
@@ -369,11 +369,12 @@
             this.ConString.Items.AddRange(new object[] {
             "server=.\\SQL2005;uid=sa;pwd=123456;database=Zephyr.Mms"});
             this.ConString.Location = new System.Drawing.Point(153, 5);
-            this.ConString.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConString.Margin = new System.Windows.Forms.Padding(4);
             this.ConString.Name = "ConString";
             this.ConString.Size = new System.Drawing.Size(935, 23);
             this.ConString.TabIndex = 13;
-            this.ConString.Text = "server=192.168.1.100\\SQL2005;database=Zephyr.MMS;UID=sa;PWD=123456";
+            this.ConString.Text = "Data Source=120.24.85.83;Initial Catalog =qianft_20180510; user id=jarqi_test; pa" +
+    "ssword=123123;";
             // 
             // dbType
             // 
@@ -382,7 +383,7 @@
             "SqlServer",
             "Oracle"});
             this.dbType.Location = new System.Drawing.Point(3, 5);
-            this.dbType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dbType.Margin = new System.Windows.Forms.Padding(4);
             this.dbType.Name = "dbType";
             this.dbType.Size = new System.Drawing.Size(141, 23);
             this.dbType.TabIndex = 14;
@@ -400,10 +401,10 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btnCode);
             this.Controls.Add(this.TableTreeView);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "智障三层烦死人";
+            this.Text = "DDD重用模型";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);

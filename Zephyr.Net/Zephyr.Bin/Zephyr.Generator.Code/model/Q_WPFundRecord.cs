@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_WPFundRecordService : ServiceBase<Q_WPFundRecord>
-    {
-       
-    }
-
-    public class Q_WPFundRecord : ModelBase
+  
+    public class Q_WPFundRecord : IAggregateRoot
     {
 
         [Identity]

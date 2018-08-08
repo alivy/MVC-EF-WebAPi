@@ -1,0 +1,23 @@
+﻿using System.Collections.Generic;
+using System.Data.Entity.ModelConfiguration;
+using System.Linq;
+using System.Text;
+
+namespace QFTService.Domain
+{
+  
+    public class {TableName}Mapping : EntityTypeConfiguration<{TableName}>
+    {
+        /// <summary>
+        /// 需要映射字段
+        /// </summary>
+        public {TableName}Mapping()
+        {
+            ToTable("{TableName}");
+
+            //HasKey(m => m.id);
+            //Property(m => m.UserName).HasColumnType("nvarchar").HasMaxLength(50);
+           
+        }
+    }
+}

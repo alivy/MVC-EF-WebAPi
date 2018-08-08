@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_AdvertService : ServiceBase<Q_Advert>
-    {
-       
-    }
-
-    public class Q_Advert : ModelBase
+  
+    public class Q_Advert : IAggregateRoot
     {
 
         [PrimaryKey]

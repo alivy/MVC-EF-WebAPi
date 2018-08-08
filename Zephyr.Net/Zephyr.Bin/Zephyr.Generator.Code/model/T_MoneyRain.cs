@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class T_MoneyRainService : ServiceBase<T_MoneyRain>
-    {
-       
-    }
-
-    public class T_MoneyRain : ModelBase
+  
+    public class T_MoneyRain : IAggregateRoot
     {
 
         [Identity]

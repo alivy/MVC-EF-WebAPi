@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class L_SafeMobileOperatorService : ServiceBase<L_SafeMobileOperator>
-    {
-       
-    }
-
-    public class L_SafeMobileOperator : ModelBase
+  
+    public class L_SafeMobileOperator : IAggregateRoot
     {
 
         [Identity]

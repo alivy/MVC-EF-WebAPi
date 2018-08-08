@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class S_FlowReceiveRecordService : ServiceBase<S_FlowReceiveRecord>
-    {
-       
-    }
-
-    public class S_FlowReceiveRecord : ModelBase
+  
+    public class S_FlowReceiveRecord : IAggregateRoot
     {
 
         [Identity]

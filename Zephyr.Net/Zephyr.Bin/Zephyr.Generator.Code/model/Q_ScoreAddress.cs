@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_ScoreAddressService : ServiceBase<Q_ScoreAddress>
-    {
-       
-    }
-
-    public class Q_ScoreAddress : ModelBase
+  
+    public class Q_ScoreAddress : IAggregateRoot
     {
 
         [Identity]

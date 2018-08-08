@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_MailRecordService : ServiceBase<Q_MailRecord>
-    {
-       
-    }
-
-    public class Q_MailRecord : ModelBase
+  
+    public class Q_MailRecord : IAggregateRoot
     {
 
         [Identity]

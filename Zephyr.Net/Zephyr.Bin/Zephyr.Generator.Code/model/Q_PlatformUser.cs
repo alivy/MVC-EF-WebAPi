@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_PlatformUserService : ServiceBase<Q_PlatformUser>
-    {
-       
-    }
-
-    public class Q_PlatformUser : ModelBase
+  
+    public class Q_PlatformUser : IAggregateRoot
     {
 
         [Identity]

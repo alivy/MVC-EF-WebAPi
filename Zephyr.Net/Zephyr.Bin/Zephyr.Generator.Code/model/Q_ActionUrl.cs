@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_ActionUrlService : ServiceBase<Q_ActionUrl>
-    {
-       
-    }
-
-    public class Q_ActionUrl : ModelBase
+  
+    public class Q_ActionUrl : IAggregateRoot
     {
 
         [Identity]

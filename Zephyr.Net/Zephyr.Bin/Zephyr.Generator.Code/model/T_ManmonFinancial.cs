@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class T_ManmonFinancialService : ServiceBase<T_ManmonFinancial>
-    {
-       
-    }
-
-    public class T_ManmonFinancial : ModelBase
+  
+    public class T_ManmonFinancial : IAggregateRoot
     {
 
         [PrimaryKey]

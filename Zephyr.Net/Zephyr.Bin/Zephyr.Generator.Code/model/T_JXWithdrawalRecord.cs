@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class T_JXWithdrawalRecordService : ServiceBase<T_JXWithdrawalRecord>
-    {
-       
-    }
-
-    public class T_JXWithdrawalRecord : ModelBase
+  
+    public class T_JXWithdrawalRecord : IAggregateRoot
     {
 
         [Identity]

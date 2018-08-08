@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_SendCreditEndRecordService : ServiceBase<Q_SendCreditEndRecord>
-    {
-       
-    }
-
-    public class Q_SendCreditEndRecord : ModelBase
+  
+    public class Q_SendCreditEndRecord : IAggregateRoot
     {
 
         [Identity]

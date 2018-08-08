@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_PlatFormMoneyBackService : ServiceBase<Q_PlatFormMoneyBack>
-    {
-       
-    }
-
-    public class Q_PlatFormMoneyBack : ModelBase
+  
+    public class Q_PlatFormMoneyBack : IAggregateRoot
     {
 
         [Identity]

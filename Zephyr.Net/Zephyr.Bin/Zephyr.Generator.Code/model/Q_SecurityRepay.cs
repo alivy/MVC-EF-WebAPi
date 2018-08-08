@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_SecurityRepayService : ServiceBase<Q_SecurityRepay>
-    {
-       
-    }
-
-    public class Q_SecurityRepay : ModelBase
+  
+    public class Q_SecurityRepay : IAggregateRoot
     {
 
         [Identity]
@@ -24,11 +19,13 @@ namespace Zephyr.Models
         public int? SubjectPayId{ get; set; }
         public decimal? Warrant_Fee{ get; set; }
         public decimal? Fine_Fee{ get; set; }
+        public decimal? Absolution_Fee{ get; set; }
         public decimal? Fee{ get; set; }
         public int State{ get; set; }
         public string Out_serial_no{ get; set; }
         public DateTime? AddTime{ get; set; }
         public DateTime? UpdaTime{ get; set; }
         public string RepayNumber{ get; set; }
+        public int? Periods{ get; set; }
     }
 }

@@ -19,6 +19,7 @@ namespace Zephyr.Generator
 
         const string TemplatePath = @".\Zephyr.Generator.Template\";
         const string sPathModel = TemplatePath + "Model.txt";
+        const string sPathMapping = TemplatePath + "Mapping.txt";
         const string sPathDAL = TemplatePath + "DAL.txt";
         const string sPathBLL = TemplatePath + "BLL.txt";
         const string sPathWebList = TemplatePath + "web_list.aspx";
@@ -36,6 +37,7 @@ namespace Zephyr.Generator
 
         public string GenModel()
         {
+            
             var TModel = ReadTxtFile(sPathModel);
             var RegField = new Regex(@"(^\s*#FieldsStart#\s*$)([\s\S]*)(^\s*#FieldsEnd#)", RegexOptions.Multiline);
             var Temp = RegField.Match(TModel).Groups[2].Value.TrimEnd();
@@ -52,6 +54,14 @@ namespace Zephyr.Generator
             TModel = RegField.Replace(TModel, sField);
             return TModel;
         }
+
+        public string GenMapping()
+        {
+            var TMapping = ReadTxtFile(sPathMapping);
+            TMapping = TMapping.Replace("{TableName}", CurrentTable.TableName);
+            return TMapping;
+        }
+
 
         public string GenDAL()
         {

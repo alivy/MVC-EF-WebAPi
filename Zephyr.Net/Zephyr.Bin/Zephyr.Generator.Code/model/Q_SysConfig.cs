@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_SysConfigService : ServiceBase<Q_SysConfig>
-    {
-       
-    }
-
-    public class Q_SysConfig : ModelBase
+  
+    public class Q_SysConfig : IAggregateRoot
     {
 
         [Identity]

@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class T_DiamondMemberService : ServiceBase<T_DiamondMember>
-    {
-       
-    }
-
-    public class T_DiamondMember : ModelBase
+  
+    public class T_DiamondMember : IAggregateRoot
     {
 
         [Identity]

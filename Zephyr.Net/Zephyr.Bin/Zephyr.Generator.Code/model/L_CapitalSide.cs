@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class L_CapitalSideService : ServiceBase<L_CapitalSide>
-    {
-       
-    }
-
-    public class L_CapitalSide : ModelBase
+  
+    public class L_CapitalSide : IAggregateRoot
     {
 
         [Identity]

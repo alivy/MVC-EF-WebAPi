@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class D_IdCardTypeService : ServiceBase<D_IdCardType>
-    {
-       
-    }
-
-    public class D_IdCardType : ModelBase
+  
+    public class D_IdCardType : IAggregateRoot
     {
 
         public string TypeId{ get; set; }

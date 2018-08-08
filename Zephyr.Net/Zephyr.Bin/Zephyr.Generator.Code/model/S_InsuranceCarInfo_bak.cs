@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class S_InsuranceCarInfo_bakService : ServiceBase<S_InsuranceCarInfo_bak>
-    {
-       
-    }
-
-    public class S_InsuranceCarInfo_bak : ModelBase
+  
+    public class S_InsuranceCarInfo_bak : IAggregateRoot
     {
 
         [Identity]

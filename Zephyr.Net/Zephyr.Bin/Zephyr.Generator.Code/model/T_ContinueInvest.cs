@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class T_ContinueInvestService : ServiceBase<T_ContinueInvest>
-    {
-       
-    }
-
-    public class T_ContinueInvest : ModelBase
+  
+    public class T_ContinueInvest : IAggregateRoot
     {
 
         [Identity]

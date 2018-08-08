@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class T_IsRecommendService : ServiceBase<T_IsRecommend>
-    {
-       
-    }
-
-    public class T_IsRecommend : ModelBase
+  
+    public class T_IsRecommend : IAggregateRoot
     {
 
         [Identity]

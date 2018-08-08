@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_R_ActioInfo_ActionGroupService : ServiceBase<Q_R_ActioInfo_ActionGroup>
-    {
-       
-    }
-
-    public class Q_R_ActioInfo_ActionGroup : ModelBase
+  
+    public class Q_R_ActioInfo_ActionGroup : IAggregateRoot
     {
 
         [PrimaryKey]

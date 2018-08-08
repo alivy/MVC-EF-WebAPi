@@ -1,19 +1,16 @@
-﻿using DAL;
-using EntityModel.Models;
-using Model.Article;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace BLL
+namespace QFTService.Domain.Repository.Interfaces
 {
-    public class {TableName}BLL : BaseBLL<{TableName}>
+    /// <summary>
+    /// 接口
+    /// </summary>
+    public interface I{TableName}Repository : IRepository<{TableName}>
     {
-        public {TableName}Dal Creat_Dal = null;
-        public override void SetDal()
-        {
-            _baseDal = new {TableName}Dal();
-        }      
+    
+
     }
 }

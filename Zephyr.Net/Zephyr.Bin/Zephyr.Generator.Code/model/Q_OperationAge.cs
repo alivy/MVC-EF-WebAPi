@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_OperationAgeService : ServiceBase<Q_OperationAge>
-    {
-       
-    }
-
-    public class Q_OperationAge : ModelBase
+  
+    public class Q_OperationAge : IAggregateRoot
     {
 
         [Identity]

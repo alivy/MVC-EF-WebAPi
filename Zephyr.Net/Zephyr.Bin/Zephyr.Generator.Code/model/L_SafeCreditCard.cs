@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class L_SafeCreditCardService : ServiceBase<L_SafeCreditCard>
-    {
-       
-    }
-
-    public class L_SafeCreditCard : ModelBase
+  
+    public class L_SafeCreditCard : IAggregateRoot
     {
 
         [Identity]

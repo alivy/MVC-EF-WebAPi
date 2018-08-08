@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class P_CompanyAuthService : ServiceBase<P_CompanyAuth>
-    {
-       
-    }
-
-    public class P_CompanyAuth : ModelBase
+  
+    public class P_CompanyAuth : IAggregateRoot
     {
 
         [Identity]

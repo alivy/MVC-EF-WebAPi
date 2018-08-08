@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_R_UserInfo_DeptService : ServiceBase<Q_R_UserInfo_Dept>
-    {
-       
-    }
-
-    public class Q_R_UserInfo_Dept : ModelBase
+  
+    public class Q_R_UserInfo_Dept : IAggregateRoot
     {
 
         [PrimaryKey]

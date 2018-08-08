@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class T_ActivityOperationTypeService : ServiceBase<T_ActivityOperationType>
-    {
-       
-    }
-
-    public class T_ActivityOperationType : ModelBase
+  
+    public class T_ActivityOperationType : IAggregateRoot
     {
 
         [PrimaryKey]

@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_PulseService : ServiceBase<Q_Pulse>
-    {
-       
-    }
-
-    public class Q_Pulse : ModelBase
+  
+    public class Q_Pulse : IAggregateRoot
     {
 
         [Identity]

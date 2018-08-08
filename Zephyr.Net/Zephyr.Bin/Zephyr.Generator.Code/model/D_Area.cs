@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class D_AreaService : ServiceBase<D_Area>
-    {
-       
-    }
-
-    public class D_Area : ModelBase
+  
+    public class D_Area : IAggregateRoot
     {
 
         public string areaCode{ get; set; }

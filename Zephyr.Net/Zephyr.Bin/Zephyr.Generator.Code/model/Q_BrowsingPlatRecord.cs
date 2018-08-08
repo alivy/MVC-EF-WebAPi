@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_BrowsingPlatRecordService : ServiceBase<Q_BrowsingPlatRecord>
-    {
-       
-    }
-
-    public class Q_BrowsingPlatRecord : ModelBase
+  
+    public class Q_BrowsingPlatRecord : IAggregateRoot
     {
 
         [Identity]

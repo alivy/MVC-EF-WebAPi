@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_BankBind_20180605Service : ServiceBase<Q_BankBind_20180605>
-    {
-       
-    }
-
-    public class Q_BankBind_20180605 : ModelBase
+  
+    public class Q_BankBind_20180605 : IAggregateRoot
     {
 
         [Identity]

@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_SmsLockService : ServiceBase<Q_SmsLock>
-    {
-       
-    }
-
-    public class Q_SmsLock : ModelBase
+  
+    public class Q_SmsLock : IAggregateRoot
     {
 
         [Identity]

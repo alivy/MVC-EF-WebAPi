@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class T_SpringFestivalService : ServiceBase<T_SpringFestival>
-    {
-       
-    }
-
-    public class T_SpringFestival : ModelBase
+  
+    public class T_SpringFestival : IAggregateRoot
     {
 
         [Identity]

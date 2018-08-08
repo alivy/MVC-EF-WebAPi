@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_RechargeExtractionRecordService : ServiceBase<Q_RechargeExtractionRecord>
-    {
-       
-    }
-
-    public class Q_RechargeExtractionRecord : ModelBase
+  
+    public class Q_RechargeExtractionRecord : IAggregateRoot
     {
 
         [Identity]

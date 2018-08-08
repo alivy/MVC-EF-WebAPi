@@ -1,19 +1,25 @@
-﻿using EntityModel;
-using EntityModel.Models;
-using ViewModel.Province;
+﻿using QFTService.Domain;
+using QFTService.Domain.Repository.Interfaces;
+using QFTService.DtoModel;
+using QFTService.Infrastructure.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Data.SqlClient;
 
-namespace DAL
+namespace QFTService.Repository
 {
-   
-    public class {TableName}Dal : BaseDal<{TableName}>
+    /// <summary>
+    /// 投资项目仓储
+    /// </summary>
+    public class {TableName}Repository : BaseRepository<{TableName}>, ISubJectBidRecordRepository
     {
-    
-
+        IUnitOfWork _unit;
+        public {TableName}Repository(IUnitOfWork unit)
+            : base(unit)
+        {
+            _unit = unit;
+        }
     }
 }
 

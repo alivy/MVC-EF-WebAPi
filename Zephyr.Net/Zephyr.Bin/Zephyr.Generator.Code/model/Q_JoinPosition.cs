@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_JoinPositionService : ServiceBase<Q_JoinPosition>
-    {
-       
-    }
-
-    public class Q_JoinPosition : ModelBase
+  
+    public class Q_JoinPosition : IAggregateRoot
     {
 
         [Identity]

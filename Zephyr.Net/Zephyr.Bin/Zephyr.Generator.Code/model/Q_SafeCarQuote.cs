@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_SafeCarQuoteService : ServiceBase<Q_SafeCarQuote>
-    {
-       
-    }
-
-    public class Q_SafeCarQuote : ModelBase
+  
+    public class Q_SafeCarQuote : IAggregateRoot
     {
 
         [Identity]

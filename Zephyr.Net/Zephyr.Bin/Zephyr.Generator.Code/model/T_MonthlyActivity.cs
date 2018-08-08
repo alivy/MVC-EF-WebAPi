@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class T_MonthlyActivityService : ServiceBase<T_MonthlyActivity>
-    {
-       
-    }
-
-    public class T_MonthlyActivity : ModelBase
+  
+    public class T_MonthlyActivity : IAggregateRoot
     {
 
         [Identity]

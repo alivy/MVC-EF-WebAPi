@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_SubjectPayService : ServiceBase<Q_SubjectPay>
-    {
-       
-    }
-
-    public class Q_SubjectPay : ModelBase
+  
+    public class Q_SubjectPay : IAggregateRoot
     {
 
         [Identity]
@@ -53,5 +48,6 @@ namespace Zephyr.Models
         public decimal? RePayment{ get; set; }
         public int? PaymentState{ get; set; }
         public int WarrantUid{ get; set; }
+        public decimal? Warrant_Fee{ get; set; }
     }
 }

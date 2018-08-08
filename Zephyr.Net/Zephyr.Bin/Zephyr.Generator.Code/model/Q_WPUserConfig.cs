@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_WPUserConfigService : ServiceBase<Q_WPUserConfig>
-    {
-       
-    }
-
-    public class Q_WPUserConfig : ModelBase
+  
+    public class Q_WPUserConfig : IAggregateRoot
     {
 
         [Identity]

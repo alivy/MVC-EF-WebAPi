@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_SafeOrderDetailService : ServiceBase<Q_SafeOrderDetail>
-    {
-       
-    }
-
-    public class Q_SafeOrderDetail : ModelBase
+  
+    public class Q_SafeOrderDetail : IAggregateRoot
     {
 
         [Identity]

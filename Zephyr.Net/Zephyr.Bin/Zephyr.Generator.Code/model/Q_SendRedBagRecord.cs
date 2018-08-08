@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_SendRedBagRecordService : ServiceBase<Q_SendRedBagRecord>
-    {
-       
-    }
-
-    public class Q_SendRedBagRecord : ModelBase
+  
+    public class Q_SendRedBagRecord : IAggregateRoot
     {
 
         [Identity]

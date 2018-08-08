@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_PlatFormSendRecordService : ServiceBase<Q_PlatFormSendRecord>
-    {
-       
-    }
-
-    public class Q_PlatFormSendRecord : ModelBase
+  
+    public class Q_PlatFormSendRecord : IAggregateRoot
     {
 
         [Identity]

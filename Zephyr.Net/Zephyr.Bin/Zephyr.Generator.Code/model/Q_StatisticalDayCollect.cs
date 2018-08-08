@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_StatisticalDayCollectService : ServiceBase<Q_StatisticalDayCollect>
-    {
-       
-    }
-
-    public class Q_StatisticalDayCollect : ModelBase
+  
+    public class Q_StatisticalDayCollect : IAggregateRoot
     {
 
         [Identity]

@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_ScoreLineFreeService : ServiceBase<Q_ScoreLineFree>
-    {
-       
-    }
-
-    public class Q_ScoreLineFree : ModelBase
+  
+    public class Q_ScoreLineFree : IAggregateRoot
     {
 
         [Identity]

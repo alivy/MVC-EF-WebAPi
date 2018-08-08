@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class S_PageVisitRecordService : ServiceBase<S_PageVisitRecord>
-    {
-       
-    }
-
-    public class S_PageVisitRecord : ModelBase
+  
+    public class S_PageVisitRecord : IAggregateRoot
     {
 
         [Identity]

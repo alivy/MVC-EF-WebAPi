@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class P_AssetsSubJectBidRecordService : ServiceBase<P_AssetsSubJectBidRecord>
-    {
-       
-    }
-
-    public class P_AssetsSubJectBidRecord : ModelBase
+  
+    public class P_AssetsSubJectBidRecord : IAggregateRoot
     {
 
         [Identity]

@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class S_FlowRewardConfigService : ServiceBase<S_FlowRewardConfig>
-    {
-       
-    }
-
-    public class S_FlowRewardConfig : ModelBase
+  
+    public class S_FlowRewardConfig : IAggregateRoot
     {
 
         [Identity]

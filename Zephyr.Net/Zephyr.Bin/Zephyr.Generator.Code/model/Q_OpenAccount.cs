@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_OpenAccountService : ServiceBase<Q_OpenAccount>
-    {
-       
-    }
-
-    public class Q_OpenAccount : ModelBase
+  
+    public class Q_OpenAccount : IAggregateRoot
     {
 
         [Identity]

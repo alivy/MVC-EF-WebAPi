@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_ContractService : ServiceBase<Q_Contract>
-    {
-       
-    }
-
-    public class Q_Contract : ModelBase
+  
+    public class Q_Contract : IAggregateRoot
     {
 
         [Identity]

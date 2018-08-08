@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_UserFollowRecordService : ServiceBase<Q_UserFollowRecord>
-    {
-       
-    }
-
-    public class Q_UserFollowRecord : ModelBase
+  
+    public class Q_UserFollowRecord : IAggregateRoot
     {
 
         [Identity]

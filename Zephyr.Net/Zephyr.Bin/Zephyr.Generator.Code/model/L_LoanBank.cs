@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class L_LoanBankService : ServiceBase<L_LoanBank>
-    {
-       
-    }
-
-    public class L_LoanBank : ModelBase
+  
+    public class L_LoanBank : IAggregateRoot
     {
 
         [Identity]

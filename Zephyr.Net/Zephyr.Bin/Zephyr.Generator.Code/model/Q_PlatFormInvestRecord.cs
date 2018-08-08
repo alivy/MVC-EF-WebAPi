@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_PlatFormInvestRecordService : ServiceBase<Q_PlatFormInvestRecord>
-    {
-       
-    }
-
-    public class Q_PlatFormInvestRecord : ModelBase
+  
+    public class Q_PlatFormInvestRecord : IAggregateRoot
     {
 
         [Identity]

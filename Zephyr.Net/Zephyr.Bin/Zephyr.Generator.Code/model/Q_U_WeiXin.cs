@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_U_WeiXinService : ServiceBase<Q_U_WeiXin>
-    {
-       
-    }
-
-    public class Q_U_WeiXin : ModelBase
+  
+    public class Q_U_WeiXin : IAggregateRoot
     {
 
         [Identity]

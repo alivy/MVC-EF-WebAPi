@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_SecuritySignRecordService : ServiceBase<Q_SecuritySignRecord>
-    {
-       
-    }
-
-    public class Q_SecuritySignRecord : ModelBase
+  
+    public class Q_SecuritySignRecord : IAggregateRoot
     {
 
         [Identity]

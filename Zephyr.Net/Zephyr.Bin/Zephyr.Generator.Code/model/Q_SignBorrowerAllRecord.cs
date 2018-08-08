@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Zephyr.Core;
 
-namespace Zephyr.Models
+namespace QFTService.Domain
 {
-    public class Q_SignBorrowerAllRecordService : ServiceBase<Q_SignBorrowerAllRecord>
-    {
-       
-    }
-
-    public class Q_SignBorrowerAllRecord : ModelBase
+  
+    public class Q_SignBorrowerAllRecord : IAggregateRoot
     {
 
         [Identity]

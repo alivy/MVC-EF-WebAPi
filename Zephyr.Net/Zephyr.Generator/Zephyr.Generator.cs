@@ -33,11 +33,11 @@ namespace Zephyr.Generator
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            tabPage4.Parent = null;
             tabPage5.Parent = null;
             tabPage6.Parent = null;
             tabPage7.Parent = null;
             tabPage8.Parent = null;
+
             var config = new IniFile(".\\Zephyr.Generator.ini");
             providers = config.ReadValue("Settings", "ProviderItems").Trim('|').Split(new string[] { "||" }, StringSplitOptions.None).ToList();
             connections = config.ReadValue("Settings", "ConnectionItems").Trim('|').Split(new string[] { "||" }, StringSplitOptions.None).ToList();
@@ -108,7 +108,7 @@ namespace Zephyr.Generator
             }
 
             var CurrentTable = TableTreeView.SelectedNode.Tag as Table;
-            var gen = new Generator(CurrentTable) { BillName = txtBillName.Text, FileName = txtFileName.Text, ModuleName = txtModule.Text };
+            var gen = new Generator(CurrentTable){BillName = txtBillName.Text,FileName = txtFileName.Text,ModuleName = txtModule.Text};
 
             foreach (TreeNode node in TableTreeView.Nodes)
             {
@@ -122,12 +122,12 @@ namespace Zephyr.Generator
             this.ModelEdit.Text = gen.GenModel();
             this.DalEdit.Text = gen.GenDAL();
             this.BllEdit.Text = gen.GenBLL();
+            this.WebListEdit.Text = gen.GenMapping();
 
-            this.WebListEdit.Text = gen.GenListAspx();
-            this.WebListJsEdit.Text = gen.GenListJs();
-
-            this.txtEditAspx.Text = gen.GenEditAspx();
-            this.txtEditJs.Text = gen.GenEditJs();
+            //this.WebListEdit.Text = gen.GenListAspx();
+            //this.WebListJsEdit.Text = gen.GenListJs();
+            //this.txtEditAspx.Text = gen.GenEditAspx();
+            //this.txtEditJs.Text = gen.GenEditJs();
         }
 
        
@@ -141,8 +141,9 @@ namespace Zephyr.Generator
 
             const string sPath = ".\\Zephyr.Generator.Code";
             const string sPathModel = sPath + "\\model\\";
-            const string sPathDAL = sPath + "\\DAL\\";
-            const string sPathBLL = sPath + "\\BLL\\";
+            const string sPathMapping = sPath + "\\Mapping\\";
+            const string sPathDAL = sPath + "\\Repository\\";
+            const string sPathBLL = sPath + "\\I_Repository\\";
 
             deleteFilesAndCreateDir(sPathModel);
             deleteFilesAndCreateDir(sPathDAL);
@@ -153,6 +154,7 @@ namespace Zephyr.Generator
                 var CurrentTable = tn.Tag as Table;
                 var gen = new Generator(CurrentTable);
                 var sModel = gen.GenModel();
+                var sMapping = gen.GenMapping();
                 var sDAL = gen.GenDAL();
                 var sBLL = gen.GenBLL();
 
@@ -162,15 +164,19 @@ namespace Zephyr.Generator
                 {
                     tw.Write(sModel);
                 }
-
+                //输出到文件中 model 映射文件
+                using (TextWriter tw = new StreamWriter(new BufferedStream(new FileStream(sPathMapping + CurrentTable.TableName + ".cs", FileMode.Create, FileAccess.Write)), System.Text.Encoding.GetEncoding("gbk")))
+                {
+                    tw.Write(sMapping);
+                }
                 //输出到文件中 dal
-                using (TextWriter tw = new StreamWriter(new BufferedStream(new FileStream(sPathDAL +"DAL"+ CurrentTable.TableName + ".cs", FileMode.Create, FileAccess.Write)), System.Text.Encoding.GetEncoding("gbk")))
+                using (TextWriter tw = new StreamWriter(new BufferedStream(new FileStream(sPathDAL + CurrentTable.TableName + "Repository.cs", FileMode.Create, FileAccess.Write)), System.Text.Encoding.GetEncoding("gbk")))
                 {
                     tw.Write(sDAL);
                 }
 
                 //输出到文件中 bll
-                using (TextWriter tw = new StreamWriter(new BufferedStream(new FileStream(sPathBLL +"BLL"+ CurrentTable.TableName + ".cs", FileMode.Create, FileAccess.Write)), System.Text.Encoding.GetEncoding("gbk")))
+                using (TextWriter tw = new StreamWriter(new BufferedStream(new FileStream(sPathBLL + "I" + CurrentTable.TableName + "Repository.cs", FileMode.Create, FileAccess.Write)), System.Text.Encoding.GetEncoding("gbk")))
                 {
                     tw.Write(sBLL);
                 }
